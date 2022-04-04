@@ -2,11 +2,13 @@
 
 .navlink {
   padding: 0.5rem 0;
+  margin-right: 0.5rem;
   cursor: pointer;
   letter-spacing: 0.1rem;
+  color: base.$light;
 
   &:hover {
-    color: base.$light;
-    border-bottom: 2px solid base.$light;
+    color: base.$white;
+    border-bottom: 2px solid base.$white;
   }
 }

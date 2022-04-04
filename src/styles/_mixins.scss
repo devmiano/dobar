@@ -1,28 +1,10 @@
-@mixin for-phone {
-  @media (max-width: 400px) {
-    @content;
-  }
-}
-
 @mixin for-tab {
-  @media (max-width: 600px) {
+  @media screen and (min-width: 0px) and(max-width: 768px) {
     @content;
   }
 }
-
-@mixin for-tab-lg {
-  @media (max-width: 900px) {
-    @content;
-  }
-}
-
 @mixin for-desktop {
-  @media (max-width: 1100px) {
-    @content;
-  }
-}
-@mixin for-desktop-lg {
-  @media (max-width: 1500px) {
+  @media screen and (min-width: 769px) and (max-width: 4000px) {
     @content;
   }
 }
@@ -31,4 +13,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+@mixin show {
+  display: block;
+}
+
+@mixin show {
+  display: none;
 }

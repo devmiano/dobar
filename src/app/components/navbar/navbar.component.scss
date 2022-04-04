@@ -23,10 +23,11 @@
   border-bottom: 2px solid base.$dark;
 
   .navlinks {
+    margin-right: 1rem;
     width: 20%;
     @include mixins.flex-row;
 
-    @include mixins.for-desktop {
+    @include mixins.for-tab {
       display: none;
     }
   }

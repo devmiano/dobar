@@ -1,0 +1,24 @@
+@use "../../../styles/base";
+@use "../../../styles/mixins";
+
+.navicon {
+  color: base.$light;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+
+  &:hover {
+    color: base.$white;
+  }
+
+  .icon {
+    background-color: base.$dark;
+    padding: 0.8rem 1rem;
+    border-radius: 15rem;
+    text-align: center;
+    margin: 0 0.5rem;
+  }
+  @include mixins.for-desktop {
+    display: none;
+  }
+}
