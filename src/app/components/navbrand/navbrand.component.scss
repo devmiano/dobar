@@ -1,0 +1,13 @@
+@use "../../../styles/base";
+
+.navbrand {
+  color: base.$white;
+  font-weight: 500;
+  font-size: 2rem;
+  cursor: pointer;
+  letter-spacing: 0.05rem;
+
+  &:hover {
+    color: base.$light;
+  }
+}

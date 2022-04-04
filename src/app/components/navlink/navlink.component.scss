@@ -1,0 +1,12 @@
+@use "../../../styles/base";
+
+.navlink {
+  padding: 0.5rem 0;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+
+  &:hover {
+    color: base.$light;
+    border-bottom: 2px solid base.$light;
+  }
+}

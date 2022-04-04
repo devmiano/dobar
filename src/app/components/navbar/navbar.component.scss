@@ -1,0 +1,33 @@
+@use "../../../styles/base";
+@use "../../../styles/mixins";
+
+// %styles {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+// }
+
+// .element {
+//   @extend %styles;
+// }
+
+.navbar {
+  @include mixins.flex-row;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  width: 100%;
+  height: 15vh;
+  padding: 1rem;
+  background-color: base.$black;
+  border-bottom: 2px solid base.$dark;
+
+  .navlinks {
+    width: 20%;
+    @include mixins.flex-row;
+
+    @include mixins.for-desktop {
+      display: none;
+    }
+  }
+}
