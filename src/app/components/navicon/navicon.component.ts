@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -7,10 +7,8 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./navicon.component.scss'],
 })
 export class NaviconComponent implements OnInit {
-  @Input() text!: string;
   faBars = faBars;
-
-  constructor() {}
+  @Input() text!: string;
 
   ngOnInit(): void {}
 }

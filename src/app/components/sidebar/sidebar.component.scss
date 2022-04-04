@@ -1,0 +1,12 @@
+@use "../../../styles/mixins";
+
+.sidebar {
+  position: absolute;
+  top: 5.5rem;
+  right: 3.5rem;
+  z-index: 200;
+
+  @include mixins.for-desktop {
+    display: none;
+  }
+}

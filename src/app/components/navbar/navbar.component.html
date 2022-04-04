@@ -1,9 +1,10 @@
 <nav class="navbar">
   <app-navbrand text="dobar digital"></app-navbrand>
-  <app-navicon text="menu"></app-navicon>
+  <app-navicon [text]="text" (click)="toggleSideBar()"></app-navicon>
   <div class="navlinks">
     <app-navlink text="work"></app-navlink>
     <app-navlink text="about"></app-navlink>
     <app-navlink text="contact"></app-navlink>
   </div>
 </nav>
+<app-sidebar *ngIf="showSideBar"></app-sidebar>

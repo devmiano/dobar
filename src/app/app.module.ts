@@ -8,6 +8,7 @@ import { NavbrandComponent } from './components/navbrand/navbrand.component';
 import { NavlinkComponent } from './components/navlink/navlink.component';
 import { NaviconComponent } from './components/navicon/navicon.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     NavbrandComponent,
     NavlinkComponent,
     NaviconComponent,
+    SidebarComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
